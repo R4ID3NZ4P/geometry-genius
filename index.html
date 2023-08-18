@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mx-14">
+    <header>
+
+    </header>
+
+    <main>
+        <!-- main container -->
+        <div class="flex flex-col lg:flex-row justify-between">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- first card -->
+                <div class="card w-92 bg-base-100 shadow-xl pt-8">
+                    <figure><img src="images/triangle.png" alt="triangle" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="text-xl font-medium">Triangle</h2>
+                      <p>Area (A) = 0.5 x b x h</p>
+                      <p>
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="b" id="t-base"> cm
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="h" id="t-height"> cm
+                      </p>
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary" id="btn-calculate-triangle">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- second card -->
+                <div class="card w-92 bg-base-100 shadow-xl pt-8">
+                    <figure><img src="images/rectangle.png" alt="rectangle" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="text-xl font-medium">Rectangle</h2>
+                      <p>Area (A) = w x l</p>
+                      <p>
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="w" id="rect-width"> cm
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="l" id="rect-length"> cm
+                      </p>
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary" id="btn-calculate-rectangle">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- third card -->
+                <div class="card w-92 bg-base-100 shadow-xl pt-8">
+                    <figure><img src="images/parallelogram.png" alt="parallelogram" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="text-xl font-medium">Parallelogram</h2>
+                      <p>Area (A) = 0.5 x b x h</p>
+                      <p>
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="b"> cm
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="h"> cm
+                      </p>
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary" id="btn-calculate-parallelogram">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- fourth card -->
+                <div class="card w-92 bg-base-100 shadow-xl pt-8">
+                    <figure><img src="images/rhombus.png" alt="rhombus" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="text-xl font-medium">Rhombus</h2>
+                      <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                      <p>
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="d1"> cm
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="d2"> cm
+                      </p>
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary" id="btn-calculate-rhombus">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- fifth card -->
+                <div class="card w-92 bg-base-100 shadow-xl pt-8">
+                    <figure><img src="images/pentagon.png" alt="pentagon" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="text-xl font-medium">Pentagon</h2>
+                      <p>Area (A) = 0.5 x p x b</p>
+                      <p>
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="p"> cm
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="b"> cm
+                      </p>
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary" id="btn-calculate-pentagon">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- sixth card -->
+                <div class="card w-92 bg-base-100 shadow-xl pt-8">
+                    <figure><img src="images/ellipse.png" alt="ellipse" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="text-xl font-medium">Ellipse</h2>
+                      <p>Area (A) = πab</p>
+                      <p>
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="a"> cm
+                        <input type="text" class="w-20 px-2 bg-gray-200 rounded-lg" placeholder="b"> cm
+                      </p>
+                      <div class="card-actions justify-center">
+                        <button class="btn btn-primary" id="btn-calculate-ellipse">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+            <!-- area calculation -->
+            <div class="border border-gray-400 rounded-xl w-96 text-center">
+                <h1 class="text-xl font-bold underline">Area Calculation</h1>
+                <div id="area-results">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/calc.js"></script>
+</body>
+</html>
